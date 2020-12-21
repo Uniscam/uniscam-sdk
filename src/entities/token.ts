@@ -95,7 +95,7 @@ export const WETH: WETHTokens = {
     'WBNB',
     'Wrapped BNB'
   ),
-  [ChainId.HECO_MAINNET]: new Token(ChainId.HECO_MAINNET, '', 18, 'WHT', 'Wrapped HT') // TODO: Add WHT token address
+  [ChainId.HECO_MAINNET]: new Token(ChainId.HECO_MAINNET, '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F', 18, 'WHT', 'Wrapped HT')
 }
 
 type Tokens = { [chainId in ChainId]: string }
