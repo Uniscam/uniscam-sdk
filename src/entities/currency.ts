@@ -3,7 +3,7 @@ import JSBI from 'jsbi'
 import { ChainId, SolidityType } from '../constants'
 import { validateSolidityTypeInstance } from '../utils'
 
-type CurrencyName = { [chainId in ChainId]: string } 
+type CurrencyName = { [chainId in ChainId]: string }
 const CurrencyName: CurrencyName = {
   [ChainId.MAINNET]: 'ETH',
   [ChainId.ROPSTEN]: 'ETH',
@@ -45,7 +45,7 @@ export class Currency {
   }
 
   toDisplayableSymbol(chainId: ChainId) {
-    if (this !== ETHER) throw new Error("Not currency instance")
+    if (this !== ETHER) throw new Error('Not currency instance')
     return CurrencyName[chainId]
   }
 }
