@@ -30,7 +30,7 @@ export const FACTORY_ADDRESS = '0x32CE36F6eA8d97f9fC19Aab83b9c6D2F52D74470'
 
 export const INIT_CODE_HASH_BSC = '0x9b025805045f6da539a4926f67307a9b0ab5aaccc42d3f14aaea0776a5b727ac'
 export const INIT_CODE_HASH_ETH = '0xa852da7194a3edaba2a5a4545af11dda00ca97d89e0f9934bb841dffaa964220'
-export const INIT_CODE_HASH_HECO = '' // TODO: Add Heco mainnet init code hash
+export const INIT_CODE_HASH_HECO = '0x7b9686f044376bf1a04de2e9f1dbb6c9a4fe516f7cbd89b68be801982b62f913'
 export const INIT_CODE_HASHES: InitCodeHashes = {
   [ChainId.MAINNET]: INIT_CODE_HASH_ETH,
   [ChainId.ROPSTEN]: INIT_CODE_HASH_ETH,
