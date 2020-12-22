@@ -12,7 +12,8 @@ const CurrencyName: CurrencyName = {
   [ChainId.KOVAN]: 'ETH',
   [ChainId.BSC_MAINNET]: 'BNB',
   [ChainId.BSC_TESTNET]: 'BNB',
-  [ChainId.HECO_MAINNET]: 'HT'
+  [ChainId.HECO_MAINNET]: 'HT',
+  [ChainId.MATIC_MAINNET]: 'MATIC'
 }
 
 /**
