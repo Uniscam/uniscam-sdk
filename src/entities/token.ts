@@ -102,7 +102,13 @@ export const WETH: WETHTokens = {
     'WHT',
     'Wrapped HT'
   ),
-  [ChainId.MATIC_MAINNET]: new Token(ChainId.MATIC_MAINNET, '', 18, 'WMATIC', 'Wrapped MATIC') // TODO: Add WETH for Matic mainnet
+  [ChainId.MATIC_MAINNET]: new Token(
+    ChainId.MATIC_MAINNET,
+    '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+    18,
+    'WMATIC',
+    'Wrapped MATIC'
+  )
 }
 
 type Tokens = { [chainId in ChainId]: string }
