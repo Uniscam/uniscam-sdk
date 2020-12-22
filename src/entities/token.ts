@@ -95,7 +95,14 @@ export const WETH: WETHTokens = {
     'WBNB',
     'Wrapped BNB'
   ),
-  [ChainId.HECO_MAINNET]: new Token(ChainId.HECO_MAINNET, '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F', 18, 'WHT', 'Wrapped HT')
+  [ChainId.HECO_MAINNET]: new Token(
+    ChainId.HECO_MAINNET,
+    '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F',
+    18,
+    'WHT',
+    'Wrapped HT'
+  ),
+  [ChainId.MATIC_MAINNET]: new Token(ChainId.MATIC_MAINNET, '', 18, 'WMATIC', 'Wrapped MATIC') // TODO: Add WETH for Matic mainnet
 }
 
 type Tokens = { [chainId in ChainId]: string }
@@ -107,7 +114,8 @@ export const USDT: Tokens = {
   [ChainId.KOVAN]: '',
   [ChainId.BSC_MAINNET]: '0x55d398326f99059fF775485246999027B3197955',
   [ChainId.BSC_TESTNET]: '0x337610d27c682E347C9cD60BD4b3b107C9d34dDd',
-  [ChainId.HECO_MAINNET]: ''
+  [ChainId.HECO_MAINNET]: '',
+  [ChainId.MATIC_MAINNET]: ''
 }
 export const BUSD: Tokens = {
   [ChainId.MAINNET]: '',
@@ -117,5 +125,6 @@ export const BUSD: Tokens = {
   [ChainId.KOVAN]: '',
   [ChainId.BSC_MAINNET]: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
   [ChainId.BSC_TESTNET]: '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
-  [ChainId.HECO_MAINNET]: ''
+  [ChainId.HECO_MAINNET]: '',
+  [ChainId.MATIC_MAINNET]: ''
 }
