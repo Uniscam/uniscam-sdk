@@ -13,6 +13,7 @@ const CurrencyName: CurrencyName = {
   [ChainId.BSC_MAINNET]: 'BNB',
   [ChainId.BSC_TESTNET]: 'BNB',
   [ChainId.HECO_MAINNET]: 'HT',
+  [ChainId.HECO_TESTNET]: 'HT',
   [ChainId.MATIC_MAINNET]: 'MATIC'
 }
 
