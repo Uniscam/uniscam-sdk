@@ -115,6 +115,13 @@ export const WETH: WETHTokens = {
     18,
     'WMATIC',
     'Wrapped MATIC'
+  ),
+  [ChainId.OKCHAIN_TEST]: new Token(
+    ChainId.OKCHAIN_TEST,
+    '0xBbeB303AFc23DF5738acC2df764FA80311Af02DF',
+    18,
+    'WOKT',
+    'Wrapped OKT'
   )
 }
 
@@ -128,6 +135,7 @@ export const USDT: Tokens = {
   [ChainId.BSC_MAINNET]: '0x55d398326f99059fF775485246999027B3197955',
   [ChainId.BSC_TESTNET]: '0x337610d27c682E347C9cD60BD4b3b107C9d34dDd',
   [ChainId.HECO_MAINNET]: '',
+  [ChainId.OKCHAIN_TEST]: '',
   [ChainId.HECO_TESTNET]: '',
   [ChainId.MATIC_MAINNET]: ''
 }
@@ -141,5 +149,6 @@ export const BUSD: Tokens = {
   [ChainId.BSC_TESTNET]: '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
   [ChainId.HECO_MAINNET]: '',
   [ChainId.HECO_TESTNET]: '',
+  [ChainId.OKCHAIN_TEST]: '',
   [ChainId.MATIC_MAINNET]: ''
 }
