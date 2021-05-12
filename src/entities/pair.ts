@@ -119,7 +119,10 @@ export class Pair {
     return token.equals(this.token0) ? this.reserve0 : this.reserve1
   }
 
-  public getOutputAmount(inputAmount: TokenAmount, fee = 997): [TokenAmount, Pair] {
+  public getOutputAmount(inputAmount: TokenAmount, fee?: number): [TokenAmount, Pair] {
+    if (fee === undefined)
+      fee = inputAmount.token.chainId === ChainId.HECO_MAINNET || inputAmount.token.chainId === ChainId.HECO_TESTNET ? 9970 : 997
+
     invariant(this.involvesToken(inputAmount.token), 'TOKEN')
     if (JSBI.equal(this.reserve0.raw, ZERO) || JSBI.equal(this.reserve1.raw, ZERO)) {
       throw new InsufficientReservesError()
@@ -140,7 +143,10 @@ export class Pair {
     return [outputAmount, new Pair(inputReserve.add(inputAmount), outputReserve.subtract(outputAmount))]
   }
 
-  public getInputAmount(outputAmount: TokenAmount, fee = 997): [TokenAmount, Pair] {
+  public getInputAmount(outputAmount: TokenAmount, fee?: number): [TokenAmount, Pair] {
+    if (fee === undefined)
+      fee = outputAmount.token.chainId === ChainId.HECO_MAINNET || outputAmount.token.chainId === ChainId.HECO_TESTNET ? 9970 : 997
+
     invariant(this.involvesToken(outputAmount.token), 'TOKEN')
     if (
       JSBI.equal(this.reserve0.raw, ZERO) ||

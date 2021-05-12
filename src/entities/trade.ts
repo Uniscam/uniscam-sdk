@@ -155,8 +155,8 @@ export class Trade {
     const amounts: TokenAmount[] = new Array(route.path.length)
     const nextPairs: Pair[] = new Array(route.pairs.length)
 
-    let fee = 997
-    if (
+    let fee
+    if (route.chainId === ChainId.BSC_MAINNET &&
       (route.input.symbol === 'BUSD' && route.output.symbol === 'USDT') ||
       (route.input.symbol === 'USDT' && route.output.symbol === 'BUSD')
     )
